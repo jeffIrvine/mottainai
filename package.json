@@ -1,0 +1,23 @@
+{
+  "name": "mottainai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "tsc-watch": "^4.2.9",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/node": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "npm tsc -p ./",
+    "build:watch": "npm run build -w",
+    "start:dev": "npm tsc-watch --onSuccess \"npm start\"",
+    "start": "node ./dist/index.js"
+  }
+}
